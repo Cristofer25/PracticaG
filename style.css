@@ -6,7 +6,7 @@
 
 header{
     height: 100px;
-    background-color: rgb(168, 145, 145);
+    background-color: rgb(15, 15, 15);
     padding: 0 50px;
     color: white;
     display: flex;
@@ -16,12 +16,12 @@ header{
 
 .logo{
     text-transform: uppercase;
-    color: rgb(169, 233, 212);
+    color: rgb(231, 189, 111);
     font-weight: 200;
 }
 
 .menu a{
-    color: wheat;
+    color: rgb(231, 189, 111);
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 10px;
@@ -53,6 +53,78 @@ header{
 
 
 
+
+#cuerpo{
+    padding: 0 50px;
+    background-image: url(./imagenes/imagen.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+#cuerpo::before{
+    content: "";
+    background: rgba(77, 77, 92, 0,6);
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    left: 0;
+}
+
+.contenido{
+    position: relative;
+    color: rgb(231, 189, 111);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.contenido h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+   background-color: black;
+   align-self: baseline;
+
+}
+
+.contenido h3 span{
+    font-weight: 600;
+}
+
+
+.boton{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    border: 1px solid rgb(231, 189, 111);
+    padding: 20x 40px;
+    align-self: baseline;
+    background-color: rgb(240, 226, 199);
+
+}
+.boton:hover{
+    background-color: rgb(231, 189, 111);
+    transition: all 0.4s;
+}
+
+
+.reservar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color:rgb(231, 189, 111);
+}
+
+.reservar button{
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(231, 189, 111);
+    width: 80px;
+}
+.reservar button:hover{
+    background-color: rgb(236, 218, 185);
+    transition: all 0.4s;
+}
 
 /*Responsive*/
 @media(max-width:600px){
